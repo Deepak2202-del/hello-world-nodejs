@@ -2,7 +2,8 @@
   "name": "hello-world-nodejs-ecs",
   "version": "1.0.0",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "echo 'No build process required'"
   },
   "dependencies": {
     "express": "^4.17.1"
