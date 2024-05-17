@@ -21,11 +21,11 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t dravula/hello-world-nodejs-ecs:latest .
+        docker build -t dravula/hello-world-nodejs-ecs:${{ github.sha }} .
 
     - name: Push Docker image
       run: |
-        docker push dravula/hello-world-nodejs-ecs:latest
+        docker push dravula/hello-world-nodejs-ecs:${{ github.sha }}
 
     - name: Deploy to ECS
       run: |
