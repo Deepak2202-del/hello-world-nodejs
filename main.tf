@@ -37,7 +37,7 @@ resource "aws_ecs_service" "hello_world" {
   launch_type      = "FARGATE"
   network_configuration {
     awsvpc_configuration {
-      subnets          = ["subnet-0123456789abcdef0"]
+      subnets          = ["subnet-0c2abb33b571382db"]
       security_groups = [aws_security_group.hello_world.id]
       assign_public_ip = "ENABLED"
     }
