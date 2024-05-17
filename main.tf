@@ -12,7 +12,7 @@ resource "aws_ecs_task_definition" "hello_world" {
   network_mode          = "awsvpc"
   cpu                    = 1024
   memory               = 512
-  execution_role_arn   = aws_iam_role.ecs_task_execution_role.arn
+  execution_role_arn   = arn:aws:iam::419577552919:role/ecs-task-execution-role
   container_definitions = jsonencode([
     {
       name      = "hello-world"
