@@ -38,7 +38,7 @@ resource "aws_ecs_service" "hello_world" {
   network_configuration {
     awsvpc_configuration {
       subnets          = ["subnet-0c2abb33b571382db"]
-      security_groups = [aws_security_group.hello_world.id]
+      security_groups = [sg-0d9417ffe4833bd3e]
       assign_public_ip = "ENABLED"
     }
   }
