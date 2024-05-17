@@ -29,6 +29,6 @@ jobs:
 
     - name: Deploy to ECS
       run: |
-        cd terraform
+
         terraform init
         terraform apply --auto-approve
