@@ -33,6 +33,7 @@ jobs:
 
         terraform init
         terraform apply --auto-approve
+        
 #This step initializes and applies a Terraform configuration to deploy the application to AWS ECS.
 #terraform init initializes the Terraform working directory.
 #terraform apply --auto-approve applies the Terraform configuration without requiring interactive approval.
